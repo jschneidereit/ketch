@@ -1,8 +1,6 @@
+package com.github.jschneidereit.ketch
+
 import com.github.ajalt.mordant.TermColors
-import com.github.jschneidereit.ketch.KetchConfig
-import com.github.jschneidereit.ketch.ProgramName
-import com.github.jschneidereit.ketch.ReporterKind
-import com.github.jschneidereit.ketch.toReporter
 import io.kotest.core.Tags
 import kotlinx.cli.ArgParser
 import kotlinx.cli.ArgType

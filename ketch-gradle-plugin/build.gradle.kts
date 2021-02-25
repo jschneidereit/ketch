@@ -4,8 +4,3 @@ plugins {
     id("com.gradle.plugin-publish") version "0.12.0"
 }
 
-val jibVersion: String by project
-
-dependencies {
-    implementation("com.google.cloud.tools.jib:com.google.cloud.tools.jib.gradle.plugin:$jibVersion")
-}

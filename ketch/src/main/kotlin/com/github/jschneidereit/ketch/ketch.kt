@@ -1,6 +1,5 @@
 package com.github.jschneidereit.ketch
 
-import cli
 import com.github.ajalt.mordant.TermColors
 import io.kotest.core.Tags
 import io.kotest.core.config.configuration
@@ -45,7 +44,7 @@ fun ketch(
 fun ketch(
     packageName: PackageName,
     listeners: List<TestEngineListener> = listOf(),
-    ketchConfig: KetchConfig = KetchConfig(ReporterKind.TAYCAN.toReporter(TermColors.Level.NONE), Tags.Empty)
+    ketchConfig: KetchConfig = KetchConfig(com.github.jschneidereit.ketch.ReporterKind.TAYCAN.toReporter(TermColors.Level.NONE), Tags.Empty)
 ): Reporter {
     val specs = scan(packageName)
 
